@@ -1,0 +1,123 @@
+body{
+    font-family: 'Jersey 10';font-size: 22px; 
+    background-image: url('login1.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+}
+h1{
+    color:#D895DA;
+    background-color: (0,0,.5);
+    text-align: center;
+    margin: 1px;;
+}
+.content{
+    text-align: center;
+    color: #bc3138;
+    font-size: 30px;
+    padding: 10px 25px;
+    background-color:(0,0,.5) ;
+
+}
+.input{
+    color: #bc3138;
+}
+
+.btn {
+    text-align: center;
+    margin: 10px;
+}
+.btn button{
+    font-size: 20px;
+    border-radius: 10px;
+    font-family:'Jersey 10'; 
+    color: #bc3138;
+}
+.one{
+    display: block;
+    margin: auto;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.btn1{
+    text-align: center;
+    font-size: 20px;
+}
+.btn1 button{font-family:'Jersey 10'; 
+    color: #bc3138;
+    border-radius: 10px;
+    margin: 1px 180px;
+    font-size: 20px;
+}
+
+.or{
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: #bc3138;
+}
+
+p{
+   width: 100%;
+   margin: 10px 10px;
+}
+@media (max-width: 425px) {
+    body,html{
+        height: 100%;
+    }
+    body {
+        font-size: 18px;
+        background-image: url('login2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    .content {
+        font-size: 24px;
+        padding: 5px 15px;
+    }
+
+    .input {
+        font-size: 18px;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    .btn button {
+        font-size: 18px;
+    }
+
+    .one {
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .btn1 {
+        font-size: 18px;
+    }
+
+    .btn1 button {
+        font-size: 18px;
+        margin: 1px 80px;
+    }
+
+    .or {
+        font-size: 14px;
+    }
+
+    p {
+        margin: 5px;
+    }
+    h5{
+        color: #1743c9;
+    }
+}

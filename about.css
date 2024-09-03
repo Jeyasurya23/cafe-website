@@ -1,0 +1,61 @@
+*{
+    font-family: 'jersey 10';
+}
+body{
+    background-color: #000000;
+
+}
+.container {
+    margin: 0 0px;
+    padding: 0 0px;
+    overflow: hidden;
+    background: linear-gradient(to right,  #000000 0%, #ff99ff 100%)                                    
+}
+.name{
+    float: left;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px #ff99ff;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 5px;
+    
+}
+.list li{
+    display: inline-block;
+}
+nav {
+    float: right;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+.list li a{
+    padding: 5px 10px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+.list a:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.content h2{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.about h1{
+    color: #ff99ff;
+    text-align: center;
+    font-size: 50px;
+}
+.about h1:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.about p{
+    color: #ff99ff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+}

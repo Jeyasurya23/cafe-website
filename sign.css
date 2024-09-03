@@ -1,0 +1,86 @@
+body{
+    font-family: 'Jersey 10';font-size: 22px;
+    background-image: url('sign.jpeg');
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: #fbfdd6;
+    font-size: 50px;
+}
+h3{
+    text-align: center;
+    color: lightskyblue ;
+    font-size: 30px;
+}
+
+.sign{
+    width: 300px;
+    padding: 10px 10px;
+    margin: 65px 500px;
+    font-size:35px;
+    background-color:(0,0,.10);
+    color: white;
+    
+}
+.input label{
+    display: block;
+}
+.input input{
+    font-size: 23px;
+}
+
+.btn{
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.btn button{
+    font-size: 20px;
+}
+@media (max-width: 425px) {
+    body,html{
+        height: 100%;
+    }
+
+    body {
+        font-size: 18px;
+        background-image: url("sign1.webp");
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .sign {
+        width: 250px;
+        margin: 50px auto;
+        font-size: 30px;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
+    .input input {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    .btn button {
+        font-size: 18px;
+    }
+}

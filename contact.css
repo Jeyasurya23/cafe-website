@@ -1,0 +1,173 @@
+*{
+    font-family: 'jersey 10';
+}
+body{
+    background-color: #000000;
+
+}
+.container {
+    margin: 0 auto;
+    padding: 0 0px;
+    overflow: hidden;
+    background: linear-gradient(to right,  #000000 0%, #ff99ff 100%)                                    
+}
+.name{
+    float: left;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px #ff99ff;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 5px;
+    
+}
+.list li{
+    display: inline-block;
+}
+nav {
+    float: right;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+.list li a{
+    padding: 5px 10px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+.list a:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.content h2{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.content h2:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.content h1:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.get h3{
+    font-size: 22px; 
+}
+.get h3:hover{
+    text-shadow: 5px 5px 15px yellow;
+    color: white;
+}
+.content dd{
+    font-size: 18px;
+}
+.get{
+    display: inline-block;
+    
+}
+.box{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 10px;
+    size: 1em;
+    padding-top: 5px;
+}
+.box button{
+    padding: 3px;
+    font-size: 1em;
+    margin-left: 50%;
+}
+.get{
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+    background-color: #000000;
+    color: #ff99ff;
+}
+.hi{
+    background-color: black;
+    color: #ff99ff;
+}
+.boxs{
+    font-size: 1em;
+}
+@media (max-width: 425px) {
+    * {
+        font-family: 'jersey 10';
+    }
+
+    body {
+        background-color: #000000;
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: linear-gradient(to right, #000000 0%, #ff99ff 100%);
+    }
+
+    .name {
+        font-size: 40px;
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+
+    .list li {
+        display: block;
+        text-align: right;
+    }
+
+    nav {
+        float: none;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .list li a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .content h2 {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .get h3 {
+        font-size: 18px;
+    }
+
+    .box {
+        text-align: center;
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .box button {
+        padding: 3px;
+        font-size: 0.9em;
+        margin-left: 50%;
+    }
+
+    .get {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: #000000;
+        color: #ff99ff;
+    }
+
+    .hi {
+        background-color: black;
+        color: #ff99ff;
+    }
+
+    .boxs {
+        font-size: 0.9em;
+    }
+}
+
+
