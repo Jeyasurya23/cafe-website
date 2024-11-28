@@ -1,0 +1,270 @@
+:root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #bf00ff;
+    --dark-bg: #0a0a0f;
+    --card-bg: #16161f;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background: rgba(22, 22, 31, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--neon-blue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 2em;
+    color: var(--neon-purple);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.name:hover {
+    text-shadow: 0 0 15px var(--neon-purple);
+    transform: scale(1.02);
+}
+
+.logo {
+    width: 25px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--neon-blue);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--neon-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: var(--neon-blue);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.about {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-size: 3em;
+    color: var(--neon-purple);
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(191, 0, 255, 0.3);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--neon-blue);
+    margin: 20px auto;
+    width: 60%;
+}
+
+.about-description {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.about-story-heading,
+.about-difference-heading,
+.about-mission-heading,
+.join-us-heading {
+    color: var(--neon-blue);
+    font-size: 2em;
+    margin: 40px 0 20px;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.about-story,
+.about-mission,
+.join-us-description {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.difference-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.difference-item {
+    background: var(--card-bg);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.difference-item:hover {
+    transform: translateX(10px);
+    border-color: var(--neon-blue);
+}
+
+.strong {
+    color: var(--neon-purple);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background: var(--card-bg);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid var(--neon-blue);
+}
+
+.footer-text {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.social-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-list {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .about {
+        margin: 30px auto;
+    }
+    
+    .about-title {
+        font-size: 2.5em;
+    }
+    
+    .about-story-heading,
+    .about-difference-heading,
+    .about-mission-heading,
+    .join-us-heading {
+        font-size: 1.8em;
+    }
+    
+    .difference-item {
+        padding: 15px;
+    }
+    
+    .difference-item:hover {
+        transform: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 15px 20px;
+    }
+    
+    .about {
+        padding: 0 40px;
+    }
+}

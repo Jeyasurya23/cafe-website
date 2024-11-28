@@ -1,0 +1,284 @@
+:root {
+    /* Colors */
+    --neon-blue: #00f3ff;
+    --neon-purple: #bf00ff;
+    --dark-bg: #0a0a0f;
+    --card-bg: #16161f;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    
+    /* Shadows and Effects */
+    --neon-blue-glow: 0 0 10px rgba(0, 243, 255, 0.2);
+    --neon-purple-glow: 0 0 15px rgba(191, 0, 255, 0.3);
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    
+    /* Font Sizes */
+    --text-xs: 0.8em;
+    --text-sm: 0.9em;
+    --text-md: 1em;
+    --text-lg: 1.5em;
+    --text-xl: 2em;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    min-height: 100dvh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    padding: var(--spacing-lg);
+    overflow: hidden;
+    background-image: linear-gradient(rgba(10, 10, 15, 0.7), rgba(10, 10, 15, 0.7)),
+                      url('sign.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Component Styles */
+.intro {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.intro-title {
+    font-size: var(--text-xl);
+    color: var(--neon-purple);
+    text-shadow: var(--neon-purple-glow);
+}
+
+.intro-subtitle {
+    color: var(--neon-blue);
+    text-shadow: var(--neon-blue-glow);
+}
+
+.signup-section {
+    background: transparent;
+    padding: var(--spacing-lg);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    border: 2px solid var(--neon-blue);
+    box-shadow: var(--neon-blue-glow);
+    max-height: 90dvh;
+    overflow-y: auto;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+.signup-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-sm);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+}
+
+/* Input Styles */
+.form-input, 
+.form-select {
+    width: 100%;
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    border-radius: 5px;
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    transition: all 0.3s ease;
+}
+
+.form-button {
+    width: 100%;
+    padding: var(--spacing-md);
+    background-color: var(--neon-blue);
+    border: none;
+    border-radius: 5px;
+    color: var(--dark-bg);
+    font-size: var(--text-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    grid-column: 1 / -1;
+    margin-top: var(--spacing-lg);
+}
+
+.form-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.form-button:active {
+    transform: translateY(1px);
+}
+
+.form-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+    .form-button {
+        padding: var(--spacing-sm);
+        font-size: var(--text-sm);
+    }
+}
+
+/* Media Queries - From smallest to largest */
+/* Mobile - Small (320px - 374px) */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    :root {
+        --spacing-lg: 10px;
+        --text-xl: 1.3em;
+        --text-lg: 1.2em;
+    }
+
+    body {
+        padding: 10px;
+        background-image: linear-gradient(rgba(10, 10, 15, 0.7), rgba(10, 10, 15, 0.7)),
+                          url('sign1.webp');
+    }
+
+    .signup-section {
+        padding: var(--spacing-sm);
+        max-width: 100%;
+    }
+
+    .signup-form {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Mobile - Medium (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    :root {
+        --spacing-lg: 12px;
+        --text-xl: 1.4em;
+    }
+
+    body {
+        padding: 12px;
+        background-image: linear-gradient(rgba(10, 10, 15, 0.7), rgba(10, 10, 15, 0.7)),
+                          url('sign1.webp');
+    }
+
+    .signup-section {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Mobile - Large (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    :root {
+        --spacing-lg: 15px;
+        --text-xl: 1.5em;
+    }
+
+    body {
+        padding: 15px;
+        background-image: linear-gradient(rgba(10, 10, 15, 0.7), rgba(10, 10, 15, 0.7)),
+                          url('sign1.webp');
+    }
+
+    .signup-section {
+        max-width: 95%;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --spacing-lg: 20px;
+        --text-xl: 1.8em;
+    }
+
+    .signup-section {
+        max-width: 720px;
+    }
+}
+
+/* Laptop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .signup-section {
+        max-width: 900px;
+    }
+}
+
+/* Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+    :root {
+        --spacing-lg: 25px;
+        --text-xl: 2.2em;
+    }
+
+    .signup-section {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .signup-section {
+        max-height: 85dvh;
+        margin: 10px 0;
+        padding: var(--spacing-md);
+    }
+
+    .intro {
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .signup-section {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.login-link-text {
+    color: var(--neon-blue);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.login-link-text:hover {
+    color: var(--neon-purple);
+    text-decoration: underline;
+}
+
+.login-link-text:active {
+    color: var(--text-secondary);
+}
+
