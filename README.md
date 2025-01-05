@@ -3,6 +3,13 @@
 
 Welcome to the **Cafe Website** project! This website is a modern, responsive design for a cafe, built using HTML and CSS.
 
+---
+## Note:
+
+This is a demo project. You can log in using any email ID and password. Just fill in the fields and click the Login button to proceed to the home page.
+
+---
+
 ## 🌐 Live Demo
 Access the website here: [Cafe Website](https://jeyasurya23.github.io/cafe-website/)
 
